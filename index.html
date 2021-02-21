@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylessheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!--Navbar with brand on left and items on right-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" style="padding-left: 0px !important;">
+            <a class="navbar-brand" href="#"><img src="./images/logo/Reservia.svg"></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="font-weight: 500;">Accomodations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: rgb(48, 48, 48);font-weight: 500;">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" style="font-weight: 700;">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h5 class="h5-responsive" style="font-weight: 700;">Find a place for your dream vacation</h5>
+    <h6 class="h6-responsive" id="downtown">Downtown or in nature</h6>
+    <div class="ui action input">
+        <button class="ui button" disabled style="border-radius: 10px 0px 0px 10px;width: 15px;padding-left: 10px;"><i
+                class="fa fa-map-marker"></i></button>
+        <input type="text" placeholder="Marseilli, France" id="locationsearchinput" style="border-radius: 0px;">
+        <button class="ui button"
+            style="background-color: #0065fc;color: white;border-radius: 0px 10px 10px 0px;">Search</button>
+    </div>
+    <div style="margin-top: 20px;">
+        <h6 style="margin-top: 35px;font-weight: 700;display: inline;margin-right: 20px;">Filters</h6>
+
+        <span
+            style="position: absolute;border-radius: 50%;background-color: #deebff;width: 32px;height: 32px;padding: 6px;">
+            <img src="./images/cash.svg" style="margin-left: 2px;margin-bottom: 1px;">
+        </span>
+        <button
+            style="font-weight: 700;background-color: white;border-radius: 20px; padding-left: 36px; padding-right: 16px;padding-top: 7px;padding-bottom: 6px;border-color: rgb(119, 117, 117);margin-left: 5px;margin-right: 20px;">
+            Low cost
+        </button>
+        <span
+            style="position: absolute;border-radius: 50%;background-color: #deebff;width: 32px;height: 32px;padding: 4px;padding-top: 6px;">
+            <img src="https://images.vexels.com/media/users/3/131356/isolated/preview/6a455e6cd7a316561345342923636be6-man-jumping-air-silhouette-3-by-vexels.png"
+                style="margin-left: 1px; height: 20px; width: 20px;">
+        </span>
+        <button
+            style="font-weight: 700;background-color: white;border-radius: 20px; padding-left: 36px; padding-right: 16px;padding-top: 7px;padding-bottom: 6px;border-color: rgb(119, 117, 117);margin-left: 5px;margin-right: 20px;">
+            Family-friendly
+        </button>
+        <span
+            style="position: absolute;border-radius: 50%;background-color: #deebff;width: 32px;height: 32px;padding: 6px;">
+            <img src="./images/suit-heart-fill.svg" style="margin-left: 2px;">
+        </span>
+        <button
+            style="font-weight: 700;background-color: white;border-radius: 20px; padding-left: 36px; padding-right: 16px;padding-top: 7px;padding-bottom: 6px;border-color: rgb(119, 117, 117);margin-left: 5px;margin-right: 20px;">
+            Romantic
+        </button>
+        <span
+            style="position: absolute;border-radius: 50%;background-color: #deebff;width: 32px;height: 32px;padding: 5px;">
+            <img src="./images/dog.png" style="margin-bottom: 3px;height: 23px;">
+        </span>
+        <button
+            style="font-weight: 700;background-color: white;border-radius: 20px; padding-left: 36px; padding-right: 16px;padding-top: 7px;padding-bottom: 6px;border-color: rgb(119, 117, 117);margin-left: 5px;">
+            Pets allowed
+        </button>
+    </div>
+    <div style=" margin-top: 35px;">
+        <a href="">
+            <span style="border: 1px solid rgb(211, 208, 208);border-radius: 50%;padding: 2px 7px 3px 8px;">
+                <i class="fa fa-info" aria-hidden="true" style="height: 51px;color: #0065fc;"></i>
+            </span></a>
+        <h6 style="display: inline-block; position: absolute;margin-left: 10px;margin-top: 2px;">More than 500
+            accommodations are available in this <br /> city
+        </h6>
+    </div>
+    <div class="container">
+        <h3 style="font-weight: 900;display: inline;">Accomodations in Marseille</h3>
+        <div class="card-group">
+            <div class="card">
+                <img src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Auberge la Cannebiere</b></h5>
+                    <p class="card-text">Night starting at <b>25€</b></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Hotel du port</b></h5>
+                    <p class="card-text">Night starting at <b>52€</b></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Les mouettes Hotel</b></h5>
+                    <p class="card-text">Night starting at <b>76€</b></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <img src="./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Hotel de la mer</b></h5>
+                    <p class="card-text">Night starting at <b>46€</b></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Auberge Le Panier</b></h5>
+                    <p class="card-text">Night starting at <b>23€</b></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Hotel chez Amina</b></h5>
+                    <p class="card-text">Night starting at <b>96€</b></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <h6 style="margin-top: 22px;margin-bottom: 22px;">
+            <a href="#" style="color: black; text-decoration: none;font-weight: 700;">
+                Show more
+            </a>
+        </h6>
+    </div>
+
+
+    <div class="container sidebar">
+        <h3 style="font-weight: bold;display: inline-block;">Most Popular</h3>
+        <i class="fa fa-line-chart" style="position: absolute; right: 30px;margin-top: 2px;font-size: 20px;"></i>
+        <div>
+            <div class="card" style="margin-top: 20px;">
+                <img src="./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Morning Sun Hotel</b></h5>
+                    <p class="card-text">Night starting at <b>128€</b></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Au coeur de l'eau Bed and Breakfast</b></h5>
+                    <p class="card-text">Night starting at <b>71€</b></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Tout bleu et Blanc Hotel</b></h5>
+                    <p class="card-text">Night starting at <b>68€</b></p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="line mb-3 mx-auto"></div>
+            <div class="d-md-flex px-5 justify-content-around bd-highlight col-md-12 pt-5 pb-5 mb-3">
+
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">About</h5>
+                    <p class="mb-0">Site Map</p>
+                    <p class="mb-0">General Terms and Conditions</p>
+                    <p class="mb-0">Data and Privacy</p>
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Our accomodations</h5>
+                    <p class="mb-0">Quality assessment</p>
+                    <p class="mb-0">You have a hotel?</p>
+
+                </div>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
+                    <h5 class="places">Assistance</h5>
+                    <p class="mb-0">Help Desk</p>
+                    <p class="mb-0">Contact Us</p>
+
+                </div>
+
+            </div>
+            <div class="line mb-3 mx-auto"></div>
+        </div>
+
+        </div>
+    </footer>
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+</html>
